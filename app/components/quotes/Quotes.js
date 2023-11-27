@@ -9,7 +9,7 @@ const Quotes = () => {
   return (
     <div className="bg-blue-100 h-640 p-16">
       {/* Title */}
-      <h2 className="font-barlow text-25 font-bold text-black mb-4 text-center">The Canadian Home</h2>
+      <h2 className="font-barlow text-25 font-extrabold text-black mb-4 text-center">The Canadian Home</h2>
 
       {/* Subhead */}
       <p className="font-barlow text-16 font-bold text-black mb-8 text-center">
@@ -19,22 +19,13 @@ const Quotes = () => {
       {/* Cards Container */}
       <div className="flex flex-row justify-center">
         {[...Array(2)].map((_, index) => (
-          <div
-            key={index} // Use the index as the key
-            className="h-84 w-314.2 bg-white overflow-hidden relative m-6 p-8"
-          >
+          <div key={index} className="h-84 w-314.2 bg-white overflow-hidden relative m-6 p-8">
             {/* Left Quote Icon */}
-            <Image
-              src="/quotes/left.svg" // Add the correct path for your left quote image
-              alt="Left Quote"
-              width={40}
-              height={40}
-              className="absolute top-0 left-4"
-            />
+            <Image src="/quotes/left.svg" alt="Left Quote" width={40} height={40} className="absolute top-0 left-4" />
 
             {/* Right Quote Icon */}
             <Image
-              src="/quotes/right.svg" // Add the correct path for your right quote image
+              src="/quotes/right.svg"
               alt="Right Quote"
               width={40}
               height={40}
@@ -49,6 +40,9 @@ const Quotes = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center mt-4">
+        <Image src="/swipe.svg" alt="Swipe Pointer" width={50} height={50} />
       </div>
     </div>
   );

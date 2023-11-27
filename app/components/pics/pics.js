@@ -4,7 +4,6 @@ import Image from "next/image";
 const Pics = () => {
   return (
     <div className="h-700 bg-white flex justify-evenly items-center p-5">
-      {/* Pic 1 */}
       <div className="text-center flex flex-col items-center py-12 px-8">
         <Image src="/pics/image3.svg" alt="Pic 3" width={120} height={120} className="cursor-pointer" />
         <h3 className="font-barlow text-13 font-bold my-4">Visibility</h3>
@@ -14,7 +13,6 @@ const Pics = () => {
         </p>
       </div>
 
-      {/* Pic 2 */}
       <div className="text-center flex flex-col items-center py-12 px-8">
         <Image src="/pics/image2.svg" alt="Pic 2" width={150} height={150} className="cursor-pointer" />
         <h3 className="font-barlow text-13 font-bold my-4">Real Local Agents</h3>
@@ -24,7 +22,6 @@ const Pics = () => {
         </p>
       </div>
 
-      {/* Pic 3 */}
       <div className="text-center flex flex-col items-center py-12 px-8">
         <Image src="/pics/image4.svg" alt="Pic 4" width={150} height={150} className="cursor-pointer" />
         <h3 className="font-barlow text-13 font-bold my-4">Email & Notification</h3>
@@ -34,7 +31,6 @@ const Pics = () => {
         </p>
       </div>
 
-      {/* Pic 4 */}
       <div className="text-center flex flex-col items-center py-12 px-8">
         <Image src="/pics/image1.svg" alt="Pic 1" width={150} height={150} className="cursor-pointer" />
         <h3 className="font-barlow text-13 font-bold my-4">Professional photos</h3>
